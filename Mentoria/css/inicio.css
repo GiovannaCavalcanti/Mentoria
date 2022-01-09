@@ -1,0 +1,460 @@
+* {
+  color: white;
+}
+
+/* Fonts padrao */
+
+h1,
+strong {
+  font-family: MyMonument !important;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: MyAdventures !important;
+  text-align: center;
+}
+span,
+p,
+label {
+  font-family: MyTomorrow !important;
+}
+
+/* Codigo global de css */
+
+body {
+  background: black;
+  font-family: sans-serif;
+}
+
+section#main-banner {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#bg-banner {
+  width: 100%;
+  background: url(../imgs/imagem-banner.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 100%;
+  padding: 30px 10px;
+}
+
+.data {
+  color: white;
+  justify-content: left;
+  font-size: 24px;
+}
+
+.title-banner h1 {
+  font-size: 34px;
+}
+
+.campos {
+  margin: 0px 0px;
+}
+
+input {
+  background: transparent;
+  margin: 0px 0px 14px 0px;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 30px;
+  font-style: italic;
+  outline: 0;
+}
+
+button.btn-form {
+  color: red;
+  background-color: #bb1f225e;
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 20px 0px;
+  border: none;
+  letter-spacing: 7px;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.info-campos {
+  color: white;
+}
+
+section#main-objetivos {
+  box-shadow: -6px 5px 20px 4px #bb1f22;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-estrelado {
+  background-image: url(../imgs/background-estrelado.jpeg);
+  width: 100%;
+}
+
+.inner h3 {
+  width: 100%;
+  font-size: 29px;
+}
+
+.info-box {
+  box-shadow: 0px 0px 25px 2px #bb1f22;
+  border-radius: 35px;
+  padding: 20px;
+  margin: 25px 15px;
+  font-size: 23px;
+  height: auto;
+  width: 80%;
+  font-weight: bolder;
+  color: white;
+}
+
+.info-box div {
+  margin: 19px 0px;
+}
+
+.info-box figure {
+  height: 135px;
+  margin: 0 auto;
+}
+
+.bt-scroll {
+  width: 99%;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+button.scroll {
+  position: relative;
+  color: white;
+  background: #bb1f22;
+  height: 100%;
+  font-size: 22px;
+  letter-spacing: 4px;
+  padding: 12px 0px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  border: none;
+  overflow: hidden;
+}
+
+section#main-conteudos {
+  width: 100%;
+  height: 100%;
+  margin: -1px auto;
+}
+
+.conteudo {
+  height: 100%;
+  width: 82%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.numero {
+  border-radius: 25px;
+  animation: glow 0.5s cubic-bezier(0.68, 0.05, 0.4, 0.98) alternate;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  box-shadow: 0px 0px 25px 2px #bb1f22;
+  color: white;
+  margin: 0 auto;
+}
+
+.t-conteudo {
+  padding: 15px;
+  font-size: 24px;
+}
+
+.copy h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: start;
+}
+
+.sub-conteudo {
+  font-size: 22px;
+}
+
+section#main-sobre {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  margin: -1px auto;
+}
+
+#bg-sobre {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../imgs/imagem-sobre.png);
+  background-position: center;
+}
+
+.sobre {
+  width: 100%;
+  flex-direction: column;
+}
+
+.sobre-conteudo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title-sobre strong {
+  font-size: 32px;
+}
+
+.info-sobre {
+  height: 100%;
+  width: 100%;
+}
+
+.info-sobre p {
+  font-size: 25px;
+  text-align: left;
+  margin: 25px 0px;
+}
+
+section#main-footer {
+  background-image: url(../imgs/background-estrelado.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+/* Efeito neon na borda dos numeros */
+
+@keyframes glow {
+  to {
+    box-shadow: 0 0 20px #443e3e, 0 0 30px #0087cb, 0 0 30px #000000;
+  }
+}
+
+@keyframes borderSlide-top {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes borderSlide-right {
+  0% {
+    top: -57px;
+  }
+
+  50%,
+  100% {
+    top: 57px;
+  }
+}
+
+@keyframes borderSlide-bottom {
+  0% {
+    left: 100%;
+  }
+
+  50%,
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes borderSlide-left {
+  0% {
+    top: 57px;
+  }
+
+  50%,
+  100% {
+    top: -57px;
+  }
+}
+
+/* Efeito no botão do form e do scroll */
+
+.btn-form:hover {
+  background: #bb1f22;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #bb1f22, 0 0 25px #bb1f22, 0 0 50px #bb1f22,
+    0 0 100px #bb1f22;
+}
+
+button.scroll:hover {
+  background: #bb1f22;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #bb1f22, 0 0 25px #bb1f22, 0 0 50px #bb1f22,
+    0 0 100px #bb1f22;
+}
+
+/* Fonts usadas */
+
+@font-face {
+  font-family: MyMonument;
+  src: url(../font/MonumentExtended-Regular.otf);
+}
+
+@font-face {
+  font-family: MyAdventures;
+  src: url(../font/Adventure\ Subtitles.ttf);
+}
+
+@font-face {
+  font-family: MyTomorrow;
+  src: url(../font/Tomorrow-Regular.ttf);
+}
+
+/* Mudança entre mobile e tablet */
+
+@media (max-width: 620px) {
+  h1 {
+    font-size: 22px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+
+  section#main-banner {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  div#bg-banner {
+    background-position: center;
+    background: black;
+  }
+
+  .inner {
+    padding: 0px 0;
+  }
+
+  .inner .menu-center {
+    margin: 0;
+    width: 100%;
+    padding: 0px 0px 72px 0px;
+  }
+
+  .info-banner {
+    width: 106%;
+  }
+
+  .data {
+    background: #0087cb;
+    width: 100%;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  section#main-objetivos {
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  section#main-conteudos {
+    width: 100%;
+    margin: 0;
+  }
+
+  section#main-sobre {
+    width: 100%;
+    margin: 0;
+  }
+
+  button.scroll {
+    width: 100%;
+  }
+
+  strong {
+    font-size: 25px !important;
+  }
+}
+
+.btn-form span {
+  background: white;
+}
+
+.efeito {
+  max-width: 100%;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, transparent, white);
+  padding: 2px 2px;
+}
+
+.bt-scroll span {
+  display: block;
+}
+
+span.animTop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e77476);
+  animation: borderSlide-top 1s ease-in-out infinite;
+}
+
+span.animRight {
+  width: 2px;
+  right: 0;
+  background: linear-gradient(180deg, transparent, #e77476);
+  animation: borderSlide-right 1s ease-in-out infinite;
+  animation-delay: 0.25s;
+  height: 100%;
+  top: 0;
+  position: absolute;
+}
+
+span.animBottom {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #e77476);
+  animation: borderSlide-bottom 1s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+span.animLeft {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(0deg, transparent, #e77476);
+  animation: borderSlide-left 1s ease-in-out infinite;
+  animation-delay: 0.75s;
+  top: 0;
+}
